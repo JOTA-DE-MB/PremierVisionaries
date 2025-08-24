@@ -62,17 +62,54 @@ header h1 {
 }
 
 /* Galeria */
-.galeria-imagens {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    flex-wrap: wrap;
+/* Carrossel */
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
-.galeria-imagens img {
-    width: 200px;
+.carousel-imagens {
+    display: flex;
+    overflow-x: scroll; /* Ativa a rolagem horizontal */
+    scroll-snap-type: x mandatory; /* Permite o "encaixe" das imagens na rolagem */
+    -webkit-overflow-scrolling: touch; /* Melhora o comportamento de rolagem em dispositivos iOS */
+    gap: 15px; /* Mantém o espaço entre as imagens */
+}
+
+.carousel-imagens::-webkit-scrollbar {
+    display: none; /* Esconde a barra de rolagem no Chrome, Safari, etc. */
+}
+
+.imagem-app {
+    flex: 0 0 auto; /* Impede que as imagens se "esmaguem" ou se estiquem */
+    width: 200px; /* Mantém a largura fixa para todas as imagens */
     border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    scroll-snap-align: center; /* Centraliza a imagem na rolagem */
+}
+
+/* Botões de navegação */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2em;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
 }
 
 /* Footer */
