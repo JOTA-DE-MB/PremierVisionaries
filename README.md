@@ -10,7 +10,7 @@ Landing page simples para disponibilizar o download do APK do aplicativo.
 
 1\. Clone o repositório:
 
-&nbsp;  ```bash
+   ```bash
 
-&nbsp;  git clone https://github.com/JOTA-DE-MB/Premier-Visionaries-pagina.git
+   git clone https://github.com/JOTA-DE-MB/PremierVisionaries.git
 
