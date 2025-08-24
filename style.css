@@ -1,36 +1,36 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+/* Container topo do app */
+.topo-app {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 
-/* Layout */
-body {
-    background: #f4f4f9;
-    color: #333;
-    line-height: 1.6;
-    padding: 20px;
-}
-
-/* Header */
-header {
+/* Colunas esquerda e direita */
+.coluna-esquerda {
+    flex: 1;
+    min-width: 250px;
     text-align: center;
-    margin-bottom: 30px;
 }
 
-header img.app-icone {
+.coluna-direita {
+    flex: 1;
+    min-width: 250px;
+    padding: 0 20px;
+}
+
+/* Ajuste para header dentro da coluna esquerda */
+.coluna-esquerda .app-icone {
     width: 100px;
     margin-bottom: 10px;
 }
 
-header h1 {
+.coluna-esquerda h1 {
     font-size: 2em;
     margin-bottom: 15px;
 }
 
-.botao-download {
+.coluna-esquerda .botao-download {
     padding: 12px 20px;
     font-size: 1.1em;
     background: #0070f3;
@@ -38,69 +38,14 @@ header h1 {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-}
-
-.botao-download:hover {
-    background: #005bb5;
-}
-
-/* Estrelas */
-.estrelas {
-    text-align: center;
-    font-size: 1.5em;
-    color: gold;
-    margin-bottom: 30px;
-}
-
-/* Informações */
-.secao-info {
-    margin-bottom: 30px;
-}
-
-.secao-info h2 {
-    margin-bottom: 10px;
-}
-
-/* Galeria */
-.galeria-imagens {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.galeria-imagens img {
-    width: 200px;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-}
-
-/* Footer */
-footer {
-    margin-top: 40px;
-    padding: 20px;
-    background: #222;
-    color: #fff;
-    border-radius: 10px;
-}
-
-footer h2 {
     margin-bottom: 15px;
 }
 
-footer ul {
-    list-style: none;
+.coluna-esquerda .botao-download:hover {
+    background: #005bb5;
 }
 
-footer li {
-    margin-bottom: 10px;
-}
-
-footer a {
-    color: #00d084;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
+.coluna-esquerda .estrelas {
+    font-size: 1.5em;
+    color: gold;
 }
