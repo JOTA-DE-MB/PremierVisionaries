@@ -57,6 +57,27 @@ header h1 {
     margin-bottom: 30px;
 }
 
+/* Container para centralizar tudo */
+.secao-classificacao {
+    text-align: center; /* Centraliza horizontalmente todo o conteúdo da seção */
+    margin-bottom: 30px;
+}
+
+/* Container para as estrelas e o número */
+.estrelas {
+    display: inline-block;
+    font-size: 1.5em;
+    color: gold;
+}
+
+/* Estilo para o número 4.5 */
+.numero-classificacao {
+    font-size: 0.9em;
+    color: #333;
+    margin-left: 5px; /* Adiciona um pequeno espaço à esquerda do número */
+    vertical-align: top;
+}
+
 /* Estilo para a meia-estrela */
 .meia-estrela {
     position: relative;
@@ -73,6 +94,13 @@ header h1 {
 
 .meia-estrela {
     color: lightgrey;
+}
+
+/* Estilo para o texto de downloads */
+.downloads-info {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px; /* Adiciona um espaço acima do texto */
 }
 
 .secao-info h2 {
