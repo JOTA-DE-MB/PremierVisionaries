@@ -109,6 +109,13 @@ header h1 {
     margin-bottom: 10px;
 }
 
+/* Estilo para os subtítulos da descrição */
+.secao-info h3 {
+    margin-top: 20px; /* Adiciona espaço acima de cada subtítulo */
+    font-size: 1.2em; /* Define um tamanho de fonte um pouco maior */
+    color: #0070f3; /* Define a cor para azul, igual ao botão de download */
+}
+
 /* Galeria */
 /* Carrossel */
 .carousel-container {
