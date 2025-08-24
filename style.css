@@ -57,6 +57,24 @@ header h1 {
     margin-bottom: 30px;
 }
 
+/* Estilo para a meia-estrela */
+.meia-estrela {
+    position: relative;
+    display: inline-block;
+}
+
+.meia-estrela::before {
+    content: '\2605'; /* Caractere de estrela */
+    position: absolute;
+    overflow: hidden;
+    width: 50%; /* Faz com que apenas metade da estrela seja exibida */
+    color: gold;
+}
+
+.meia-estrela {
+    color: lightgrey;
+}
+
 .secao-info h2 {
     margin-bottom: 10px;
 }
